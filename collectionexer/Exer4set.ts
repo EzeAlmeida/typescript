@@ -15,11 +15,11 @@ numeros.add(6);
 
 var adicione = readlinesync.questionInt("Digite um numero de 0 a 10: ")
 
-if(adicione > 10){
-    console.log(`O numero ${adicione} não foi encontrado`)
-} else if(adicione <=10) {
-    numeros.has(adicione)
-    console.log(`O numero ${adicione} foi encontrado`)
-
-
+if (numeros.has(adicione)) {
+    console.log(`O número ${adicione} foi encontrado.`);
+} else {
+    console.log(`O número ${adicione} não foi encontrado.`);
 }
+
+
+
